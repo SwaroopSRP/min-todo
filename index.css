@@ -304,8 +304,8 @@
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
-  .pt-2\.5 {
-    padding-top: calc(var(--spacing) * 2.5);
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .text-center {
     text-align: center;
