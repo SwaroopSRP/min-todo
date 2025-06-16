@@ -5,7 +5,7 @@ As I go further on my [web development jouney](https://github.com/SwaroopSRP/lea
 
 ## Features
 - Quick and simple user experience
-- Optimized for smaller screen (well, at least tried to)
-- Works on vanilla JS (so no view mess-ups)
-- Works on local storage (sadly)
+- Optimized viewing for smaller screens (well, at least tried to)
+- Works on vanilla JS (thus easy on processing)
+- Works on local storage (yikes!)
 - Built using TailwindCSS
