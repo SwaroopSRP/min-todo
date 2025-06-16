@@ -1,4 +1,4 @@
-# min-todo
+# Min ToDo
 Min ToDo is your yet another simple and minimalistic Todo list manager with no extra BS. Just to the point, quick to use and suckless UX.
 
 As I go further on my [web development jouney](https://github.com/SwaroopSRP/learning-web-dev), this my first simple project after learning JavaScript like most of web developers: a todo list!
