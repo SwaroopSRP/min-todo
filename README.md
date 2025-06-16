@@ -7,4 +7,5 @@ As I go further on my [web development jouney](https://github.com/SwaroopSRP/lea
 - Quick and simple user experience
 - Optimized for smaller screen (well, at least tried to)
 - Works on vanilla JS (so no view mess-ups)
+- Works on local storage (sadly)
 - Built using TailwindCSS
