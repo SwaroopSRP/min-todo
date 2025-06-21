@@ -1,4 +1,4 @@
-import "scripts/init.js";
-import "scripts/events.js";
+import "./scripts/init.js";
+import "./scripts/events.js";
 
 
