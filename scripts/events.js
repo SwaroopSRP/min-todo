@@ -1,10 +1,7 @@
 import { DOM, tasksArr, _clearTasksArr } from "./globals.js";
 import { togglePromptScreen, closeAddTaskPrompt, addNewTask, saveToLocal } from "./utils.js";
 
-prompt("events");
-
-DOM.addTaskBtn.addEventListener("click", () => {
-    prompt("AddTask");    
+DOM.addTaskBtn.addEventListener("click", () => {    
     togglePromptScreen();
     DOM.addTaskPrompt.classList.replace("hidden", "block");
 });
