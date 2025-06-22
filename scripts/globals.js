@@ -23,5 +23,3 @@ export function _togglePromptStateBool() {
 export function _clearTasksArr() {
     tasksArr = [];
 }
-
-prompt('globals');
