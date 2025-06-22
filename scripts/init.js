@@ -1,5 +1,7 @@
 import { DOM, tasksArr } from "scripts/globals.js";
 
+prompt("init");
+
 DOM.taskTextBox.value= "";
 DOM.taskTextBox.focus();
 
