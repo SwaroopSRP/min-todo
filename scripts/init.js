@@ -1,7 +1,6 @@
 import { DOM, tasksArr } from "./globals.js";
 
 DOM.taskTextBox.value= "";
-DOM.taskTextBox.focus();
 
 if (tasksArr.length > 0) {
     DOM.emptyMsg.classList.add("hidden");
