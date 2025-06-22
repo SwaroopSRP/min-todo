@@ -1,7 +1,5 @@
 import { LOCAL_STORAGE_KEY, tasksArr, DOM, isPromptScreenOpened, _togglePromptStateBool } from "./globals.js";
 
-prompt("utils");
-
 export function saveToLocal() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(tasksArr));
 }
