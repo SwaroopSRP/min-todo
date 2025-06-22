@@ -4,6 +4,7 @@ import { togglePromptScreen, closeAddTaskPrompt, addNewTask, saveToLocal } from 
 DOM.addTaskBtn.addEventListener("click", () => {    
     togglePromptScreen();
     DOM.addTaskPrompt.classList.replace("hidden", "block");
+    DOM.taskTextBox.focus();
 });
 
 DOM.promptScreen.addEventListener("click", (event) => {
