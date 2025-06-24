@@ -1,4 +1,4 @@
-import { LOCAL_STORAGE_KEY, tasksArr, DOM, isPromptScreenOpened, _togglePromptStateBool } from "./globals.js";
+import { LOCAL_STORAGE_KEY, tasksArr, DOM, isPromptScreenOpened, _togglePromptStateBool, _clearTasksArr } from "./globals.js";
 
 export function saveToLocal() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(tasksArr));
@@ -75,4 +75,17 @@ export function closeAddTaskPrompt() {
     togglePromptScreen();
     DOM.addTaskPromptGuideText.textContent = "Write your task below:";
     DOM.addTaskPromptGuideText.classList.remove("text-red-500");
+    DOM.addTaskPrompt.classList.replace("block", "hidden");
+}
+
+export function clearAllTasks() {
+    DOM.taskList.replaceChildren();
+    DOM.emptyMsg.classList.replace("hidden", "block");
+    _clearTasksArr();
+    saveToLocal();
+}
+
+export function closeClearAllPrompt() {
+    togglePromptScreen();
+    DOM.clearAllPrompt.classList.replace("block", "hidden")
 }
