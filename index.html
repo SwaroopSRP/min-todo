@@ -65,6 +65,18 @@
                     </button>
                 </div>
             </div>
+            <div id="clear-all-prompt" role="dialog" class="hidden bg-gray-900 border-2 rounded-2xl w-11/12 md:w-xl xl:w-3xl">
+                <h3 class="text-3xl font-bold p-4">Clear All Tasks</h3>
+                <p class="text-lg p-3">
+                    This action will delete all tasks, regardless of their completion status.
+                    <br/>
+                    Proceed with caution!
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-3">
+                    <button id="cancel-clear-all-btn" class="cursor-pointer text-center rounded-xl border-2 border-gray-500 bg-gray-500 px-3 py-0.5 text-lg font-bold transition-colors duration-300 hover:border-gray-400 hover:bg-gray-400 md:p-3">Cancel</button>
+                    <button id="proceed-clear-all-btn" class="row-start-1 md:row-start-auto cursor-pointer text-center rounded-xl border-2 border-red-500 bg-red-500 px-3 py-0.5 text-lg font-bold transition-colors duration-300 hover:border-red-400 hover:bg-red-400 md:p-3">Proceed</button>
+                </div>
+            </div>
         </div>
 
         <footer></footer>
