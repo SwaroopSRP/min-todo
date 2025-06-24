@@ -13,7 +13,10 @@ export const DOM = {
     closeAddTaskPromptBtn: document.getElementById("close-add-task-prompt"),
     addTaskPromptGuideText: document.getElementById("guide-text"),
     taskTextBox: document.getElementById("task-textbox"),
-    saveTaskBtn: document.getElementById("save-task-btn")
+    saveTaskBtn: document.getElementById("save-task-btn"),
+    clearAllPrompt: document.getElementById("clear-all-prompt"),
+    cancelClearAllBtn: document.getElementById("cancel-clear-all-btn"),
+    proceedClearAllBtn: document.getElementById("proceed-clear-all-btn"),
 };
 
 export function _togglePromptStateBool() {
