@@ -3,9 +3,9 @@ Min ToDo is your yet another simple and minimalistic Todo list manager. Just to 
 
 As I go further on my [web development jouney](https://github.com/SwaroopSRP/learning-web-dev), this my first simple project after learning JavaScript like most of web developers: a todo list!
 
-## Features
+## All About This Project
 - Quick and simple user experience
-- Optimized viewing for smaller screens (well, at least tried to)
-- Works on vanilla JS (thus easy on processing)
-- Works on local storage (yikes!)
+- Optimized viewing for smaller screens
+- Works on vanilla JS (fast yk)
+- Works on browser local storage (no sync, but data stays within your device)
 - Built using TailwindCSS
