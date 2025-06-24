@@ -7,5 +7,5 @@ As I go further on my [web development jouney](https://github.com/SwaroopSRP/lea
 - Quick and simple user experience
 - Optimized viewing for smaller screens
 - Works on vanilla JS (fast yk)
-- Works on browser local storage (no sync, but data stays within your device)
+- Works on browser local storage (no sync, but data stays persistent within your device)
 - Built using TailwindCSS
