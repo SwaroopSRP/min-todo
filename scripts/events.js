@@ -1,5 +1,5 @@
 import { DOM, tasksArr, _clearTasksArr } from "./globals.js";
-import { togglePromptScreen, closeAddTaskPrompt, addNewTask, saveToLocal } from "./utils.js";
+import { togglePromptScreen, closeAddTaskPrompt, addNewTask, clearAllTasks, closeClearAllPrompt } from "./utils.js";
 
 DOM.addTaskBtn.addEventListener("click", () => {    
     togglePromptScreen();
@@ -7,9 +7,16 @@ DOM.addTaskBtn.addEventListener("click", () => {
     DOM.taskTextBox.focus();
 });
 
+DOM.clearAllBtn.addEventListener("click", () => {
+    togglePromptScreen();
+    DOM.clearAllPrompt.classList.replace("hidden", "block");
+});
+
 DOM.promptScreen.addEventListener("click", (event) => {
-    if (event.target === DOM.promptScreen) {
+    if (event.target === DOM.promptScreen && !DOM.addTaskPrompt.classList.contains("hidden")) {
         closeAddTaskPrompt();
+    } else if (event.target === DOM.promptScreen && !DOM.clearAllPrompt.classList.contains("hidden")) {
+        closeClearAllPrompt();
     }
 });
 
@@ -19,12 +26,16 @@ DOM.saveTaskBtn.addEventListener("click", () => {
     if (addNewTask()) {
         closeAddTaskPrompt();
     }
+
     DOM.taskTextBox.value = "";
 });
 
-DOM.clearAllBtn.addEventListener("click", () => {
-    DOM.taskList.replaceChildren();
-    DOM.emptyMsg.classList.remove("hidden");
-    _clearTasksArr();
-    saveToLocal();
+DOM.cancelClearAllBtn.addEventListener("click", () => {
+    togglePromptScreen();
+    DOM.clearAllPrompt.classList.replace("block", "hidden");
 })
+
+DOM.proceedClearAllBtn.addEventListener("click", () => {
+    clearAllTasks();
+    closeClearAllPrompt();
+});
