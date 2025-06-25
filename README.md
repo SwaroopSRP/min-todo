@@ -5,7 +5,8 @@ As I go further on my [web development jouney](https://github.com/SwaroopSRP/lea
 
 ## All About This Project
 - Quick and simple user experience
+- Suckless UI
 - Optimized viewing for smaller screens
-- Works on vanilla JS (fast yk)
+- Works on vanilla JS
 - Works on browser local storage (no sync, but data stays persistent within your device)
 - Built using TailwindCSS
