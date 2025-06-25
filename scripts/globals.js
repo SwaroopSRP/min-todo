@@ -14,6 +14,9 @@ export const DOM = {
     addTaskPromptGuideText: document.getElementById("guide-text"),
     taskTextBox: document.getElementById("task-textbox"),
     saveTaskBtn: document.getElementById("save-task-btn"),
+    clearCompletedPrompt: document.getElementById("clear-completed-prompt"),
+    cancelClearCompletedBtn: document.getElementById("cancel-clear-completed-btn"),
+    proceedClearCompletedBtn: document.getElementById("proceed-clear-completed-btn"),
     clearAllPrompt: document.getElementById("clear-all-prompt"),
     cancelClearAllBtn: document.getElementById("cancel-clear-all-btn"),
     proceedClearAllBtn: document.getElementById("proceed-clear-all-btn"),
@@ -25,4 +28,8 @@ export function _togglePromptStateBool() {
 
 export function _clearTasksArr() {
     tasksArr = [];
+}
+
+export function _setTasksArr(newArr) {
+    tasksArr = newArr;
 }
